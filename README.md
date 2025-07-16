@@ -54,7 +54,3 @@ No external tools or setup required — just shorten and track.
 
 ---
 
-## License
-
-Licensed under the MIT License.  
-Use freely, modify as needed, and make it your own.
