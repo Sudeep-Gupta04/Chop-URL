@@ -1,0 +1,15 @@
+.graph-container {
+    width: 100%;
+    max-width: 900px; /* Adjust max width as needed */
+    margin: 20px auto; /* Centers the graph */
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  }
+  
+  canvas {
+    width: 100% !important; /* Ensures chart takes full width */
+    height: 400px !important; /* Set a fixed height */
+  }
+  

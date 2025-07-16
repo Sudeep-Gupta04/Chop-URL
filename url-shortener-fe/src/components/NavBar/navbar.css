@@ -1,0 +1,110 @@
+/* Ensure Navbar is fully stretched */
+.navbar {
+    width: 100%;
+    background: linear-gradient(to right, #4a00e0, #8e2de2); /* Adjust color */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ensure navbar content is properly aligned */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Center ChopURL vertically */
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Style the links properly */
+  .navbar-links {
+    padding: auto;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  /* Style each link */
+  .navbar-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 10px 15px;
+    transition: color 0.3s, background 0.3s;
+  }
+  
+  /* Fix Hover Color */
+  .navbar-link:hover {
+    background: rgba(255, 255, 255, 0.2); /* Light transparent hover */
+    color: #ffffff; /* Ensure text stays white */
+    border-radius: 5px;
+  }
+  
+  /* Active link highlight */
+  .navbar-active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+  }
+  
+  /* Log Out Button */
+  .navbar-button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .navbar-button:hover {
+    background: darkred;
+  }
+  
+  /* Responsive - Mobile Menu */
+  .navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #4a00e0;
+      width: 200px;
+      border-radius: 5px;
+      padding: 10px;
+    }
+  
+    .navbar-links.open {
+      display: flex;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  
